@@ -1,6 +1,6 @@
 // getting the board for the grid
 const board = document.querySelector(".board");
-const boardSize = 700;
+const boardSize = 850;
 
 // function to create the grid to draw on
 // has a parameter to determine the dimensions to use for the board
@@ -27,4 +27,19 @@ function makeBoard(dimension = 16) {
         })
     }
 }
+
 makeBoard();
+
+const reset = document.querySelector("button")
+reset.addEventListener("click", () => {
+    // remove all squares of our board
+    const squares = board.querySelectorAll(".square");
+    squares.forEach((square) => square.remove());
+
+    // prompt user for new dimensions
+    let dim = prompt("Please enter dimensions for each size. Max 50");
+    while (dim < 1 || dim > 50) {
+        dim = prompt("Invalid dimension. Please enter number in the range 1-50");
+    }
+    makeBoard(dim)
+});
