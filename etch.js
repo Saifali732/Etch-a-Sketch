@@ -16,6 +16,15 @@ function makeBoard(dimension = 16) {
         square.style.width = `${size}px`;
         square.style.height = `${size}px`;
         board.append(square);
+
+        // e refers to the event itself
+        square.addEventListener("mouseover", (e) => {
+            // target is used to select the element that caused the event to start
+            // here it was our square div
+            // we can select it like this and change the color like so
+            e.target.style.backgroundColor = 'black';
+            e.target.style.borderColor = 'black';
+        })
     }
 }
 makeBoard();
