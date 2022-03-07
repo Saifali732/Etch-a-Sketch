@@ -5,4 +5,4 @@ This objective of this project is to create an etch a sketch board using html, c
 - [x] Create a 16x16 grid of divs using Javascript
 - [x] Create hover effect to change color of blocks
 - [x] Add button to clear the grid and prompt user for grid dimensions
-- [ ] \(Optional) Allow user to change the color to fill with
+- [x] \(Optional) Allow user to change the color to fill with

@@ -1,9 +1,19 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    background-color: rgb(21, 26, 39);
+    padding: 20px;
+}
 .board {
-    width: 850px;
-    height: 850px;
+    width: 700px;
+    height: 700px;
     display: flex;
     border:  1px solid;
     flex-wrap: wrap;
+    background-color: white;
 }
 
 .square {
@@ -11,4 +21,12 @@
     border: .25px solid lightgrey;
     margin: 0;
     padding: 0;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(46, 58, 87);
+    padding: 30px;
+    border-radius: 10%;
 }
