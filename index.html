@@ -7,19 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch A Sketch</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atma&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <script src="etch.js" defer></script>
-    <div class="options">
-        <button type="button" id="black">Black</button>
-        <button type="button" id="rainbow">Rainbow</button>
-        <button type="button" id="eraser">Eraser</button>
-        <button type="button" id="clear">Clear</button>
-        <div id="size">30x30</div>
-        <input type="range" id="dimensions" min="1" max="60" value="30" step="1">
-    </div>
-    <div class="board"></div>
+    <h2>Etch A Sketch!</h2>
+
+    <main class="main">
+        <div class="options">
+            <button type="button" id="black">Black</button>
+            <button type="button" id="rainbow">Rainbow</button>
+            <button type="button" id="eraser">Eraser</button>
+            <button type="button" id="clear">Clear</button>
+            <div id="size">30x30</div>
+            <input type="range" id="dimensions" min="1" max="60" value="30" step="1">
+        </div>
+        <div class="board"></div>
+    </main>
 </body>
+
 
 </html>

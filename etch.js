@@ -1,6 +1,6 @@
 // getting the board for the grid
 const board = document.querySelector(".board");
-const boardSize = 700;
+const boardSize = 600;
 
 //variable to keep track of blocks on each side (30 by default)
 let boardDims = 30;

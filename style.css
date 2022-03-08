@@ -1,17 +1,28 @@
+*{
+    font-family: 'Atma', cursive, sans-serif;
+    color: lightgray;
+}
 body {
+    background-color: rgb(21, 26, 39);
+    padding: 0;
+    margin: 0;
+}
+h2 {
+    text-align: center;
+    font-size: 50px;
+}
+.main {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 100px;
-    background-color: rgb(21, 26, 39);
-    padding: 20px;
+    margin-top: 60px;
 }
 .board {
-    width: 700px;
-    height: 700px;
+    width: 600px;
+    height: 600px;
     display: flex;
-    border:  1px solid;
     flex-wrap: wrap;
     background-color: white;
 }
@@ -26,7 +37,28 @@ body {
 .options{
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: rgb(46, 58, 87);
     padding: 30px;
     border-radius: 10%;
+    gap: 10px;
 }
+
+button {
+    width: 100px;
+    background-color: transparent;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: lightgray;
+    color: rgb(46, 58, 87);
+    transition: .15s;
+    transform: scale(1.15);
+}
+
+#size {
+    font-size: 20px;
+} 
