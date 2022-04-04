@@ -1,16 +1,19 @@
-*{
+* {
     font-family: 'Atma', cursive, sans-serif;
     color: lightgray;
 }
+
 body {
     background-color: rgb(21, 26, 39);
-    padding: 0;
+    padding: 70px;
     margin: 0;
 }
+
 h2 {
     text-align: center;
     font-size: 50px;
 }
+
 .main {
     display: flex;
     flex-wrap: wrap;
@@ -19,6 +22,7 @@ h2 {
     gap: 100px;
     margin-top: 60px;
 }
+
 .board {
     width: 600px;
     height: 600px;
@@ -34,7 +38,7 @@ h2 {
     padding: 0;
 }
 
-.options{
+.options {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,4 +65,4 @@ button:hover {
 
 #size {
     font-size: 20px;
-} 
+}

@@ -71,9 +71,10 @@ function fillBoard() {
                     space.borderColor = "lightgray";
                     break;
                 case "rainbow":
-                    // the number is the same as #ffffff in hex
-                    // toString(16) says we want to convert the number to hex
-                    let randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+                    // max value is FFFFFF, get random
+                    // convert to integer and then back to hex
+                    // use padding to color is a 6 digit hex
+                    let randomColor = '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16).padStart(6, 0);
                     space.backgroundColor = space.borderColor = randomColor;
                     break;
             }
